@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../public/assets/question-mark-g136d9b5a4_1920.jpg');
 }
 
 code {
