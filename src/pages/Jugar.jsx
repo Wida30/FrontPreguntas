@@ -1,6 +1,8 @@
 import React from "react";
-import PreguntaBack from "../componentes/PreguntaBack";
-import PreguntaDetail from "../componentes/PreguntaDetail";
+import PreguntaBack from "../componentes/Preguntas/PreguntaBack";
+
+
+
 
 
 const Jugar = () => {
@@ -8,7 +10,7 @@ const Jugar = () => {
 
   return (
     <>
-     <PreguntaBack/>
+      <PreguntaBack/>
      
     </>
   );

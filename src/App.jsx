@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import Jugar from "./pages/Jugar";
 import Contact from "./pages/Contact";
 import { SWContextProvider } from "./context/context";
-import PreguntaDetail from "./componentes/PreguntaDetail";
+import PreguntaDetail from "./componentes/Preguntas/PreguntaDetail";
+
 
 function App() {
   return (
