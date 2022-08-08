@@ -1,0 +1,37 @@
+.puntuacion {
+  width: 80vw;
+  height: 80px;
+  background-color: rgba(255, 253, 153, 0.5);
+  border-radius: 35px;
+  border: 4px solid rgb(66, 134, 245);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+
+  .tituloPuntuacion {
+    
+    font-size: small;
+  }
+
+  
+}
+.resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    button {
+      background-color: #ea4c89;
+      border-radius: 8px;
+      border-style: none;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px 16px;
+      transition: color 100ms;
+    
+    }
+  }

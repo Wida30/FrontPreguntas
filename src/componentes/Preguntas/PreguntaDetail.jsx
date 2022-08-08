@@ -6,6 +6,7 @@ import axios from "axios";
 
 import "./PreguntaDetail.scss";
 
+
 const PreguntaDetail = () => {
   const { id } = useParams();
   const [pregunta, setPregunta] = useState({});
@@ -29,6 +30,7 @@ const PreguntaDetail = () => {
 
 
   return (
+    <>
     <div className="cartaDetalle">
       {pregunta ? (
         <>
@@ -44,7 +46,10 @@ const PreguntaDetail = () => {
       <Link to="/jugar">Volver</Link>
       
       </button>
+     
     </div>
+    
+    </>
   );
 };
 

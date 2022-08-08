@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { SWContext } from "../../context/context";
+
 import "./PreguntaBack.scss";
 
 
@@ -21,6 +22,7 @@ const PreguntaBack = () => {
            
           ))}
       </section>
+    
     </>
   );
 };
