@@ -22,6 +22,19 @@
 
     input {
       padding: 3px;
+      border: none;
+      background: none;
+      border-bottom: #ea4c89 solid 2px;
+      outline: none;
+    }
+
+    textarea{
+      padding: 3px;
+      border: none;
+      background: rgb(245, 245, 245, 0.5);
+      border-bottom: #ea4c89 solid 2px;
+      outline: none;
+
     }
 
     button {
