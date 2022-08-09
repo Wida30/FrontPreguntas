@@ -1,19 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 
 import { SWContext } from "../../context/context";
 import Popup from "reactjs-popup";
 import "./PreguntaBack.scss";
-import "./PreguntaDetail.scss";
+
 
 const PreguntaBack = () => {
   const { preguntas } = useContext(SWContext);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setVisible(true);
-    }, 8000);
-  });
+ ;
 
   return (
     <>
@@ -33,7 +27,7 @@ const PreguntaBack = () => {
                         <p className="tituloRespuesta">{pregunta.respuesta}</p>
                       )} */}
 
-                      <Popup trigger={<button>Ver respuesta</button>} position="center" >
+                      <Popup trigger={<button>Ver respuesta</button>} position="center" className="dosPop" >
                       <p className="tituloRespuesta">{pregunta.respuesta}</p>
                       </Popup>
 

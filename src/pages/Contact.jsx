@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.scss";
+import Swal from "sweetalert2";
 
 const Contac = () => {
 
-  const INITIAL_STATE = {
-    nombre: "",
-    email: "",
-    mensaje: "",
-  };
-
-  const [state, setState] = useState(INITIAL_STATE);
-
+  
   const sendEmail = (event) => {
     event.preventDefault();
 
@@ -27,7 +21,22 @@ const Contac = () => {
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
 
-      setState(INITIAL_STATE)
+      Swal.fire({
+        title: 'Gracias',
+        text: "Tu pregunta se incluirá en breve",
+        width: 600,
+        padding: '3em',
+        color: '#716add',        
+        imageUrl: './assets/fondo.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+        backdrop: `
+          rgba(0,0,123,0.4)          
+          left top
+          no-repeat
+        `
+      })
   };
 
   return (
@@ -41,7 +50,7 @@ const Contac = () => {
         <label htmlFor="email">Email:</label>
         <input type="text" id="email" name="email" />
 
-        <label htmlFor="mensaje">Tu mensaje:</label>
+        <label htmlFor="mensaje">Tu pregunta:</label>
         <textarea
           type="text"
           id="mensaje"
